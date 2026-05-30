@@ -1,13 +1,21 @@
 import styles from '../navigation/Navigation.module.css'
-
+import logo from '../../assets/images/nav/logo.svg'
+import { useState } from "react"
+import { motion } from 'framer-motion'
+ 
 export function Navigation() {
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-            <nav className={styles.nav}>
+            <motion.nav 
+            className={styles.nav}
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition= {{ dureation: 0.5, ease: "easeOut" }}>
                 <div className={styles["nav__container"]}>
                     <a href="#">
-                        <img src="./src/assets/images/nav/logo.svg" alt="logo" />
+                        <img className={styles['nav__logo']} src={logo} alt="logo" />
                     </a>
                     <ul className={styles["nav__titles"]}>
                         <li className={styles["nav__title"]}>
@@ -29,8 +37,13 @@ export function Navigation() {
                     <button className={styles['nav__button']}>
                         Записаться
                     </button>
+                    <button className={styles['nav__burger']} aria-label='Открыть меню' aria-controls='mobile-menu' aria-expanded='isOpen'>
+                        <span className={styles['nav__burgerLine']}></span>
+                        <span className={styles['nav__burgerLine']}></span>
+                        <span className={styles['nav__burgerLine']}></span>
+                    </button>
                 </div>
-            </nav>
+            </motion.nav>
         </>
     )
 
