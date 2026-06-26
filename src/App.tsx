@@ -1,13 +1,13 @@
 import './App.css'
 import { Navigation } from './components/navigation/Navigation'
-import { Header } from './components/header/Header'
+import { MainPage } from './pages/mainPage/mainPage'
 
 function App() {
 
   return (
     <div className='app'>
       <Navigation />
-      <Header />
+      <MainPage />
     </div>
   )
 }

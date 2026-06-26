@@ -85,6 +85,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    box-shadow: 0 6px 0 0 #A3C1FF;
+    margin-bottom: 6px;
 }
 
 .header__containerListPlus {
@@ -147,6 +149,7 @@
 
 .header__containerButton:hover {
     background-color: #A3C1FF;
+    border: none;
 }
 
 .header__containerButtons__make:hover {
@@ -156,6 +159,7 @@
 
 .header__containerButtons__consultation:hover {
     background-color: #A3C1FF;
+    border: none;
 }
 
 .header__transfer {

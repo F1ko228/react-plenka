@@ -12,7 +12,7 @@ export function Navigation() {
             className={styles.nav}
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition= {{ dureation: 0.5, ease: "easeOut" }}>
+            transition= {{ duration: 0.5, ease: "easeOut" }}>
                 <div className={styles["nav__container"]}>
                     <a href="#">
                         <img className={styles['nav__logo']} src={logo} alt="logo" />
