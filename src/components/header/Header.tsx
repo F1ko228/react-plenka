@@ -45,18 +45,18 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         transition= {{ duration: 0.6, ease: "easeOut", delay: 1 }}
                     >
-                        <p className={styles['header__containerListPlus']}>
+                        <div className={styles['header__containerListPlus']}>
                             <img className={styles['header__checkmark']} src={checkmark}  alt='checkmark'/>
                             <p>Обновляем вид</p>
-                        </p>
-                        <p className={styles['header__containerListPlus']}>
+                        </div>
+                        <div className={styles['header__containerListPlus']}>
                             <img className={styles['header__checkmark']} src={checkmark} alt='checkmark'/>
                             <p>Бронируем кузов</p>
-                        </p>    
-                        <p className={styles['header__containerListPlus']}>
+                        </div>    
+                        <div className={styles['header__containerListPlus']}>
                             <img className={styles['header__checkmark']} src={checkmark} alt='checkmark'/>
                             <p>Сохраняем нервы</p>
-                        </p>
+                        </div>
                     </motion.div>
                     <motion.button className={styles['header__containerButton']}
                         initial={{ opacity: 0, y: 20 }}

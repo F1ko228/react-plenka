@@ -176,8 +176,8 @@
     }
 
     .header__container {
-        width: calc(100% - 40px);
-        margin: 0 20px;
+        width: calc(100% - 60px);
+        margin: 0 30px;
         align-items: start;
         gap: 20px;
         transform: translateY(-60px);
@@ -205,8 +205,8 @@
     }
 
     .header__bottomContainer {
-        width: calc(100% - 40px);
-        margin: 0 20px;
+        width: calc(100% - 60px);
+        margin: 0 30px;
         bottom: 30px;
     }
 
@@ -285,4 +285,35 @@
         .header__containerButtons__consultation {
             width: 100%;
         }
+}
+
+@media(min-width: 1920px) {
+    .header {
+        height: 1080px;
+    }
+
+    .header:before {
+        height: 1080px;
+    }
+
+    .header__container {
+        max-width: 1820px;
+    }
+
+    .header_containerTitle {
+        font-size: 181px;
+        white-space: nowrap;
+    }
+
+    .header__containerGap__line {
+        width: 880px;
+    }
+
+    .header__containerText {
+        font-size: 40px;
+    }
+
+    .header__bottomContainer {
+        max-width: 1820px;
+    }
 }
