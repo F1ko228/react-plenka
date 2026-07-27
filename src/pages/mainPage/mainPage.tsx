@@ -1,6 +1,7 @@
-import { Header } from '../../components/header/Header'
+import { Header } from '../../components/Header/Header'
 import styles from './mainPage.module.css'
 import protector from '../../assets/images/firstMain/protectors.png'
+import { Reveal } from '../../components/Animations/Reveal'
 
 export function MainPage() {
     return (
@@ -8,7 +9,7 @@ export function MainPage() {
             <Header />
             <img src={protector} alt="protector" className={styles['why_protector__first']}/>
             <img src={protector} alt="protector" className={styles['why_protector__second']}/>
-            <section className={styles['why']}>
+            <Reveal as='section' className={styles['why']} variant='up'>
                 <div className={styles['why-wrapper']}>
                     <h1 className={styles['why__title']}>Почему стоит<br/> обратиться к нам</h1>
                     <span className={styles['why__line']}></span>
@@ -28,7 +29,10 @@ export function MainPage() {
                     </div> 
                 </div>
                 <div className={styles['why-blocks']}>
-                    <div className={styles['why-blocks__rect']}></div>
+                    <div className={styles['why-blocks__rect']}>
+                        <h2 className={styles['why-blocks__rect-title']}>10 лет</h2>
+                        <p className={styles['why-blocks__rect-text']}>Работаем с плёнкой и автомобилями</p>
+                    </div>
                     <div className={styles['why-blocks__wrapper']}>
                         <div className={styles['why-blocks__lines']}>
                             <span className={styles['why-blocks__line']}></span>
@@ -39,17 +43,20 @@ export function MainPage() {
                             <span className={styles['why-blocks__line']}></span>
                         </div>
                         <div className={styles['why-blocks__rect']}>
-
+                            <h2 className={styles['why-blocks__rect-title']}>Мастерство</h2>
+                            <p className={styles['why-blocks__rect-text']}>Наши команда детейлеров обладает опытом работы от 5 лет, а матереалы, которыми мы выполняем работу - лучшие на рынке</p>
                         </div>
                     </div>
                     <div className={styles['why-blocks__rect']}>
-                        
+                        <h2 className={styles['why-blocks__rect-title']}>Гарантия</h2>
+                        <p className={styles['why-blocks__rect-text']}>Гарантия распространяется на все виды работ</p>
                     </div>
                     <div className={styles['why-blocks__rect']}>
-                    
+                        <h2 className={styles['why-blocks__rect-title']}>Огромный список <br className={styles['why-blocks__rect-br']}/>услуг</h2>
+                        <p className={styles['why-blocks__rect-text']}>Наши команда детейлеров обладает опытом работы от 5 лет, а матереалы, которыми мы выполняем работу - лучшие на рынке</p>
                     </div> 
                 </div>
-            </section>
+            </Reveal>
             <section>
                 gsdg
             </section>

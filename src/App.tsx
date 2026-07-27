@@ -1,6 +1,6 @@
 import './App.css'
-import { Navigation } from './components/navigation/Navigation'
-import { MainPage } from './pages/mainPage/mainPage'
+import { Navigation } from './components/Navigation/Navigation'
+import { MainPage } from './pages/MainPage/MainPage'
 
 function App() {
 

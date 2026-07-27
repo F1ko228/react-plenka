@@ -6,6 +6,7 @@
     gap: 120px;
     position: relative;
     overflow: hidden;
+    background: #EDEDED;
 }
 
 .why {
@@ -73,8 +74,14 @@
 .why-blocks__rect {
     width: 325px;
     height: 189px;
-    background-color: rgba(58, 58, 58, 0.2);
+    background-color: #fff;
+    border-color: rgba(58, 58, 58, 0.2);
     border-radius: 20px;
+    padding: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 3;
 }
 
 .why-blocks__wrapper {
@@ -134,6 +141,20 @@
     display: none;
 }
 
+.why-blocks__rect-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #A3C1ff;
+}
+
+.why-blocks__rect-text {
+    font-family: var(--font-accent);
+    font-size: 14px;
+    line-height: 130%;
+    width: 280px;
+}
+
+
 @media(min-width: 1920px) {
     .why__title {
         font-size: 60px;
@@ -163,6 +184,8 @@
     .why-blocks__rect {
         width: 440px;
         height: 252px;
+        gap: 25px;
+        padding: 30px 0 0 30px;
     }
 
     .why-blocks {
@@ -202,6 +225,21 @@
        gap: 80px;
     }
 
+    .why-blocks__rect-title {
+        font-size: 30px;
+        width: 273px;
+        line-height: 115%;
+    }
+
+    .why-blocks__rect-text {
+        font-size: 18px;
+        width: 380px;
+    }
+
+    .why-blocks__rect-br {
+        display: none;
+    }
+
 }
 
 @media(max-width: 1440px) {
@@ -213,6 +251,7 @@
         gap: 40px;
         width: calc(100% - 60px);
         margin: 0 30px;
+        max-width: 708px;
     }
 
     .why_protector__first {
@@ -258,6 +297,8 @@
     .why-blocks__rect {
         width: 349px;
         height: 142px;
+        padding: 20px 0 0 20px;
+        gap: 20px;
     }
 
     .why-exceptr__titles {
@@ -270,7 +311,7 @@
 
     .why-blocks {
         grid-template-columns: repeat(2, 349px);
-        justify-content: start;
+        justify-content: center;
     }   
 
     .why-excerpt__br-desk {
@@ -279,6 +320,19 @@
 
     .why-excerpt__br-tabl {
         display: block;
+    }
+
+    .why-blocks__rect-br {
+        display: none;
+    }
+
+    .why-blocks__rect-title {
+        font-size: 18px;
+    }
+
+    .why-blocks__rect-text {
+        font-size: 12px;
+        width: 283px;
     }
 }
 
@@ -291,11 +345,13 @@
         width: calc(100% - 40px);
         margin: 0 40px;
         gap: 20px;
+        max-width: 320px;
     }
 
     .why-blocks__rect {
         width: 320px;
         height: 132px;
+        gap: 10px;
     }
 
     .why-blocks {
