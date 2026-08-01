@@ -2,6 +2,7 @@ import { Header } from '../../components/Header/Header'
 import styles from './mainPage.module.css'
 import protector from '../../assets/images/firstMain/protectors.png'
 import { Reveal } from '../../components/Animations/Reveal'
+import { Complexes } from '../../components/Complexes/Complexes'
 
 export function MainPage() {
     return (
@@ -57,8 +58,9 @@ export function MainPage() {
                     </div> 
                 </div>
             </Reveal>
+            <Complexes />
             <section>
-                gsdg
+                sdg
             </section>
         </section>
 )

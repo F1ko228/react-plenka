@@ -44,12 +44,6 @@ delay = 0
     const MotionTag = motionTags[as];
     const animation = variantsSet[variant];
 
-    console.log("Reveal rendered", {
-        as,
-        variant,
-        animation,
-    });
-
     return (
         <MotionTag
             className={className}
