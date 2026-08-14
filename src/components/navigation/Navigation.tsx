@@ -1,10 +1,10 @@
-import styles from '../navigation/Navigation.module.css'
+import styles from './Navigation.module.css'
 import logo from '../../assets/images/nav/logo.svg'
-import { useState } from "react"
 import { motion } from 'framer-motion'
+import { useMenu } from '../../providers/useMenu'
  
 export function Navigation() {
-    const [isOpen, setIsOpen] = useState(false);
+    const { isMenuOpen, toggleMenu } = useMenu();
 
     return (
         <>
@@ -20,24 +20,24 @@ export function Navigation() {
                     <ul className={styles["nav__titles"]}>
                         <li className={styles["nav__title"]}>
                             <a href="" className={styles["nav__titleLink"]}>Пакеты и цены</a>
-                            </li>
+                        </li>
                         <li className={styles["nav__title"]}>
                             <a href="" className={styles["nav__titleLink"]}>Услуги</a>
-                            </li>
+                        </li>
                         <li className={styles["nav__title"]}>
                             <a href="" className={styles["nav__titleLink"]}>Наши работы</a>
-                            </li>
+                        </li>
                         <li className={styles["nav__title"]}>
                             <a href="" className={styles["nav__titleLink"]}>Отзывы</a>
-                            </li>
+                        </li>
                         <li className={styles["nav__title"]}>
                             <a href="" className={styles["nav__titleLink"]}>Контакты</a>
-                            </li>
+                        </li>
                     </ul>
                     <button className={styles['nav__button']}>
                         Записаться
                     </button>
-                    <button className={styles['nav__burger']} aria-label='Открыть меню' aria-controls='mobile-menu' aria-expanded='isOpen'>
+                    <button className={styles['nav__burger']} aria-label='Открыть меню' aria-controls='mobile-menu' aria-expanded={ isMenuOpen } onClick={ () => toggleMenu() }>
                         <span className={styles['nav__burgerLine']}></span>
                         <span className={styles['nav__burgerLine']}></span>
                         <span className={styles['nav__burgerLine']}></span>

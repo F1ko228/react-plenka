@@ -41,16 +41,20 @@
 
 .nav__title {
     list-style: none;
+    display: block;
 }
 
 .nav__titleLink {
     color: #fff;
     text-decoration: none;
+    transition: .4s ease;
+    display: inline-block;
 }
 
 .nav__titleLink:hover {
-    border-bottom: 1px solid #fff;
+    transform: translateY(-5px);
 }
+
 
 .nav__button {
     font-family: var(--font-main);

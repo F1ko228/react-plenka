@@ -1,4 +1,4 @@
-import styles from '../../components/Complexes/Complexes.module.css'
+import styles from './Complexes.module.css'
 import { useState } from "react"
 import { Reveal } from "../Animations/Reveal"
 import { ComplexesDesktop } from './ComplexesDesktop'
@@ -20,7 +20,7 @@ export function Complexes() {
             </div>
 
             <div className={styles['complexes-elem']}>
-                <h2 className={styles['complxes-elem__title']}>Оклейка Базовых зон риска</h2>
+                <h2 className={styles['complxes-elem__title']}>Оклейка Базовых<br className={styles['complxes-elem__title-br']}/> зон риска</h2>
                 {isMobile ? <ComplexesMobile packages={packagesWrapping} activeId={activeIdWrap} onChange={setActiveIdWrap} /> : <ComplexesDesktop packages={packagesWrapping} activeId={activeIdWrap}  onChange={setActiveIdWrap} />}
             </div>
 

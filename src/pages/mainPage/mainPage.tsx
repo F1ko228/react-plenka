@@ -1,5 +1,5 @@
 import { Header } from '../../components/Header/Header'
-import styles from './mainPage.module.css'
+import styles from './MainPage.module.css'
 import protector from '../../assets/images/firstMain/protectors.png'
 import { Reveal } from '../../components/Animations/Reveal'
 import { Complexes } from '../../components/Complexes/Complexes'
@@ -54,13 +54,13 @@ export function MainPage() {
                     </div>
                     <div className={styles['why-blocks__rect']}>
                         <h2 className={styles['why-blocks__rect-title']}>Огромный список <br className={styles['why-blocks__rect-br']}/>услуг</h2>
-                        <p className={styles['why-blocks__rect-text']}>Наши команда детейлеров обладает опытом работы от 5 лет, а матереалы, которыми мы выполняем работу - лучшие на рынке</p>
+                        <p className={styles['why-blocks__rect-text']}>Наши команда детейлеров обладает опытом работы от 5 лет, а матереалы, которыми мы выполняем работу - лучшие на рынке</p>
                     </div> 
                 </div>
             </Reveal>
             <Complexes />
             <section>
-                sdg
+                
             </section>
         </section>
 )

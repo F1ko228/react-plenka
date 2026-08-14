@@ -13,9 +13,9 @@ export const packagesWrapping: Package[] = [
     {
         id: 'basic',
         title: 'БАЗОВЫЙ',
-        price1: '39 000',
-        price2: '69 000',
-        price3: '79 000',
+        price1: '39 000₽',
+        price2: '69 000₽',
+        price3: '79 000₽',
         services: [
             "Бампер",
             "Стойки лобового стекла",
@@ -27,9 +27,9 @@ export const packagesWrapping: Package[] = [
     {
         id: 'optimal',
         title: 'ОПТИМАЛЬНЫЙ',
-        price1: '44 000',
-        price2: '79 000',
-        price3: '94 000',
+        price1: '44 000₽',
+        price2: '79 000₽',
+        price3: '94 000₽',
         services: [
             "Бампер",
             "Стойки лобового стекла",
@@ -43,9 +43,9 @@ export const packagesWrapping: Package[] = [
     {
         id: 'premium',
         title: 'ПРЕМИАЛЬНЫЙ',
-        price1: '49 000',
-        price2: '84 000',
-        price3: '99 000',
+        price1: '49 000₽',
+        price2: '84 000₽',
+        price3: '99 000₽',
         services: [
             "Бампер",
             "Стойки лобового стекла",
@@ -66,9 +66,9 @@ export const packagesDeteiling: Package[] = [
     {
         id: 'basic',
         title: 'БАЗОВЫЙ',
-        price1: '22 000',
-        price2: '25 500',
-        price3: '31 000',
+        price1: '22 000₽',
+        price2: '25 500₽',
+        price3: '31 000₽',
         services: [
             "Химчистка кузова",
             "Детейлинг салона",
@@ -79,9 +79,9 @@ export const packagesDeteiling: Package[] = [
     {
         id: 'optimal',
         title: 'ОПТИМАЛЬНЫЙ',
-        price1: '41  000',
-        price2: '43 500',
-        price3: '51 000',
+        price1: '41  000₽',
+        price2: '43 500₽',
+        price3: '51 000₽',
         services: [
             "Химчистка кузова",
             "Детейлинг салона",
@@ -95,9 +95,9 @@ export const packagesDeteiling: Package[] = [
     {
         id: 'premium',
         title: 'ПРЕМИАЛЬНЫЙ',
-        price1: '59 000',
-        price2: '63 000',
-        price3: '70 000',
+        price1: '59 000₽',
+        price2: '63 000₽',
+        price3: '70 000₽',
         services: [
             "Химчистка кузова",
             "Детейлинг салона с обслуживанием кожи",
